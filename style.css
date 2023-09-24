@@ -5,3 +5,72 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: rgb(71, 24, 109);
+}
+
+.main_form {
+  width: 30vw;
+  background: white;
+}
+
+.main_form h1 {
+  font-size: 3vw;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 2vh;
+}
+
+.form {
+  padding: 0 3vw;
+}
+
+.res_result {
+  font-size: 2vh;
+  color: green;
+}
+
+.form_outer label {
+  display: block;
+  margin-bottom: 1vh;
+  letter-spacing: 0.1vw;
+  font-size: 1vw;
+}
+
+.form_outer input,
+.form_outer textarea {
+  width: 100%;
+  padding: 0.5vh 0.3vw;
+  border: 1px solid black;
+  border-radius: 3px;
+  outline: none;
+  font-size: 1vw;
+}
+
+.form_outer textarea {
+  resize: none;
+}
+
+.button button {
+  margin-top: 3vh;
+  padding: 2vh 0;
+  width: 100%;
+  margin-bottom: 3vh;
+  background-color: rgb(71, 24, 109);
+  color: white;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.button button:hover {
+  border-color: black;
+  background: transparent;
+  color: black;
+}
