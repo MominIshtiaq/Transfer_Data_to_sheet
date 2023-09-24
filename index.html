@@ -10,7 +10,7 @@
     <div class="container">
       <div class="main_form">
         <h1>Contact Us</h1>
-        <form class="form" method="post">
+        <form class="form">
           <div class="res_result"></div>
           <div class="form_outer">
             <label for="name">Name</label>
@@ -18,37 +18,24 @@
               type="text"
               id="name"
               name="name"
-              required
               autocomplete="off"
               autofocus
             />
           </div>
           <div class="form_outer">
             <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              autocomplete="off"
-            />
+            <input type="email" id="email" name="email" autocomplete="off" />
           </div>
           <div class="form_outer">
             <label for="phone">Phone</label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              required
-              autocomplete="off"
-            />
+            <input type="tel" id="phone" name="phone" autocomplete="off" />
           </div>
           <div class="form_outer">
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="3" required></textarea>
+            <textarea id="message" name="message" rows="3"></textarea>
           </div>
           <div class="button">
-            <button type="submit" class="btn">Submit</button>
+            <button type="submit" name="btn">Submit</button>
           </div>
         </form>
       </div>

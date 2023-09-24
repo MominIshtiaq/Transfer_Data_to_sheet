@@ -3,17 +3,17 @@ let url =
 
 const form = document.querySelector(".form");
 form.addEventListener("submit", (e) => {
-  console.log(e.target.btn);
-  //   let formData = new FormData(form);
-  //   fetch(url, {
-  //     method: "POST",
-  //     body: formData,
-  //   })
-  //     .then((res) => res.text())
-  //     .then((finalResponse) => {
-  //       let span = document.createElement("span");
-  //       span = document.createTextNode(finalResponse);
-  //       document.querySelector(".res_result").append(span);
-  //     });
-  //   e.preventDefault();
+  e.target.btn.innerHTML = "Submitting...";
+  let formData = new FormData(form);
+  fetch(url, {
+    method: "POST",
+    body: formData,
+  })
+    .then((res) => res.text())
+    .then((finalResponse) => {
+      let span = document.createElement("span");
+      span = document.createTextNode(finalResponse);
+      document.querySelector(".res_result").append(span);
+    });
+  e.preventDefault();
 });
