@@ -14,6 +14,11 @@ form.addEventListener("submit", (e) => {
       let span = document.createElement("span");
       span = document.createTextNode(finalResponse);
       document.querySelector(".res_result").append(span);
+      form.reset();
+      e.target.btn.innerHTML = "Submit";
+      setTimeout(() => {
+        document.querySelector(".res_result").remove(span);
+      }, 5000);
     });
   e.preventDefault();
 });
