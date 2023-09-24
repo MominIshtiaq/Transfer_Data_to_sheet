@@ -16,7 +16,7 @@
 }
 
 .main_form {
-  width: 30vw;
+  width: 40vw;
   background: white;
 }
 
@@ -38,9 +38,9 @@
 
 .form_outer label {
   display: block;
-  margin-bottom: 1vh;
+  margin-bottom: 0.2rem;
   letter-spacing: 0.1vw;
-  font-size: 1vw;
+  font-size: 0.67rem;
 }
 
 .form_outer input,
@@ -50,7 +50,8 @@
   border: 1px solid black;
   border-radius: 3px;
   outline: none;
-  font-size: 1vw;
+  font-size: 0.67rem;
+  margin-bottom: 0.5rem;
 }
 
 .form_outer textarea {
@@ -73,4 +74,22 @@
   border-color: black;
   background: transparent;
   color: black;
+}
+
+@media screen and (min-width: 1024px) {
+  .main_form {
+    width: 40vw;
+  }
+}
+
+@media screen and (mix-width: 767px) and (max-width: 1023) {
+  .main_form {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main_form {
+    width: 80vw;
+  }
 }
